@@ -61,90 +61,71 @@
 
     <section id="projects" class="bg-slate-100 py-20 px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-black mb-16 text-center text-slate-900 tracking-tight">Case Study: The Offline Engine</h2>
+            <h2 class="text-4xl font-black mb-16 text-center text-slate-900 tracking-tight">Enterprise-Scale Case Study</h2>
             
             <div class="space-y-16">
                 <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-200">
+                    
                     <div class="bg-slate-900 p-8 text-white flex flex-col md:flex-row justify-between items-center gap-6">
                         <div>
-                            <h3 class="text-2xl font-bold">Canva: Multi-Platform Offline Sync</h3>
-                            <p class="text-blue-400 font-mono text-sm uppercase tracking-widest mt-1">Cross-Platform Audit (Windows, macOS, iOS, Android)</p>
+                            <h3 class="text-2xl font-bold">Canva: The "Offline-First" Architecture Audit</h3>
+                            <p class="text-blue-400 font-mono text-sm uppercase tracking-widest mt-1">Cross-Platform Integrity Testing</p>
                         </div>
                         <a href="canva-bug-report.xlsx" download class="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-bold transition flex items-center justify-center gap-3 shadow-lg shadow-blue-500/20">
-                            <i class="fa-solid fa-file-export"></i> VIEW BUG SPREADSHEET
+                            <i class="fa-solid fa-file-export"></i> DOWNLOAD TECHNICAL AUDIT (.XLSX)
                         </a>
                     </div>
 
                     <div class="p-8 md:p-12">
-                        <div class="grid md:grid-cols-3 gap-8 mb-12">
-                            <div class="border-l-4 border-amber-500 pl-6">
-                                <h4 class="font-black text-slate-900 uppercase text-xs tracking-widest mb-2">The Goal</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed font-medium">Ensure 100M+ users can design without internet and sync perfectly when back online without losing a single pixel.</p>
+                        <div class="mb-12">
+                            <h4 class="text-xs font-black text-blue-600 uppercase tracking-[0.2em] mb-4">The Mission</h4>
+                            <p class="text-xl md:text-2xl text-slate-800 leading-snug font-semibold">
+                                I was tasked with breaking the synchronization logic of Canva’s most ambitious architectural shift: <span class="text-slate-500 italic">Total Offline Freedom.</span>
+                            </p>
+                            <p class="mt-6 text-slate-600 leading-relaxed max-w-4xl">
+                                Testing an "Offline-First" experience isn't about checking buttons—it’s about simulating the chaotic reality of the modern user. My work focused on the high-friction moments when a design moves from a <strong>persistent server state to a volatile local state.</strong> I took full ownership of the end-to-end verification across the Windows/macOS Desktop Apps and Mobile ecosystems to ensure that "Airplane Mode" never meant "Data Loss."
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-8 mb-12">
+                            <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                                <h5 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                                    <i class="fa-solid fa-vial-virus text-blue-600"></i> Chaos Engineering
+                                </h5>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Simulated <strong>flaky, throttled, and intermittent internet transitions.</strong> I pushed the sync engine to its limits to see if it could survive a hard-close during a background upload or a session hand-off between devices.
+                                </p>
                             </div>
-                            <div class="border-l-4 border-blue-500 pl-6">
-                                <h4 class="font-black text-slate-900 uppercase text-xs tracking-widest mb-2">The Strategy</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed font-medium">Manual stress-testing of "Airplane Mode" transitions, flaky 3G networks, and multi-tab sync conflicts.</p>
-                            </div>
-                            <div class="border-l-4 border-green-500 pl-6">
-                                <h4 class="font-black text-slate-900 uppercase text-xs tracking-widest mb-2">The Result</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed font-medium">28+ Critical bugs caught—ranging from Audio Voiceover deletions to UI layout breaks on iOS/Android.</p>
+                            <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                                <h5 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                                    <i class="fa-solid fa-database text-blue-600"></i> State Persistence Logic
+                                </h5>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Verified the <strong>Mandatory Reload protocols</strong> and local cache integrity. If a user added a high-resolution video or an audio track while offline, I ensured the "Conflict Resolution" logic favored the user's hard work over server errors.
+                                </p>
                             </div>
                         </div>
 
-                        <div class="space-y-8">
-                            <h4 class="text-xl font-extrabold text-slate-900 flex items-center gap-3">
-                                <span class="bg-slate-900 text-white w-8 h-8 rounded-lg flex items-center justify-center text-xs">01</span>
-                                Feature-Specific Testing
-                            </h4>
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 flex items-start gap-4">
-                                    <i class="fa-solid fa-cloud-slash text-blue-600 text-xl mt-1"></i>
-                                    <div>
-                                        <p class="font-bold text-slate-800">State Transitions</p>
-                                        <p class="text-xs text-slate-500">Online ➔ Flaky 3G ➔ Offline. Validating the "Available Offline" toggle logic.</p>
-                                    </div>
+                        <div class="flex flex-wrap items-center justify-between gap-6 pt-8 border-t border-slate-100">
+                            <div class="flex gap-8">
+                                <div>
+                                    <span class="block text-3xl font-black text-slate-900">28</span>
+                                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Structural Flaws Found</span>
                                 </div>
-                                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 flex items-start gap-4">
-                                    <i class="fa-solid fa-rotate text-blue-600 text-xl mt-1"></i>
-                                    <div>
-                                        <p class="font-bold text-slate-800">Mandatory Reload Logic</p>
-                                        <p class="text-xs text-slate-500">Ensuring the "Reload to Enable Offline" toast triggers and executes correctly.</p>
-                                    </div>
-                                </div>
-                                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 flex items-start gap-4">
-                                    <i class="fa-solid fa-microphone text-blue-600 text-xl mt-1"></i>
-                                    <div>
-                                        <p class="font-bold text-slate-800">Media Integrity</p>
-                                        <p class="text-xs text-slate-500">Testing audio/video playback and recording functionality in zero-bandwidth states.</p>
-                                    </div>
-                                </div>
-                                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 flex items-start gap-4">
-                                    <i class="fa-solid fa-object-group text-blue-600 text-xl mt-1"></i>
-                                    <div>
-                                        <p class="font-bold text-slate-800">Element Persistence</p>
-                                        <p class="text-xs text-slate-500">Validating that shapes, text, and colors persist when the Canva app is hard-closed.</p>
-                                    </div>
+                                <div>
+                                    <span class="block text-3xl font-black text-slate-900">Zero</span>
+                                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Data Loss Incidents</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="mt-12 p-8 bg-blue-50 rounded-3xl border border-blue-100">
-                            <h4 class="font-black text-blue-900 text-xs uppercase tracking-widest mb-4">Critical Catch of the Project:</h4>
-                            <div class="flex flex-col md:flex-row gap-6 items-center">
-                                <div class="bg-white p-4 rounded-2xl shadow-sm border border-blue-200">
-                                    <p class="text-xs font-mono text-blue-600 font-bold mb-1">[BUG_01] CRITICAL</p>
-                                    <p class="text-sm text-slate-700 font-medium">Audio Voiceover recorded on Mac Web disappears when syncing back from offline state.</p>
-                                </div>
-                                <i class="fa-solid fa-arrow-right text-blue-300 hidden md:block"></i>
-                                <div class="flex-1">
-                                    <p class="text-sm text-blue-900 leading-relaxed font-medium">
-                                        Prevented a major data-loss issue where user-recorded content was being wiped by the sync engine. This fix ensured professional creators didn't lose hours of work.
-                                    </p>
-                                </div>
+                            <div class="flex gap-4">
+                                <i class="fa-brands fa-apple text-2xl text-slate-300"></i>
+                                <i class="fa-brands fa-windows text-2xl text-slate-300"></i>
+                                <i class="fa-brands fa-android text-2xl text-slate-300"></i>
+                                <i class="fa-solid fa-globe text-2xl text-slate-300"></i>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
         </div>
